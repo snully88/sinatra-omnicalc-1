@@ -28,9 +28,9 @@ get("/square_root/new") do
 end
 
 get("/square_root/results") do
-  @the_num1 = params.fetch("users_number1").to_f
+  @the_num = params.fetch("users_number").to_f
 
-  @the_result1 = Math.sqrt(@the_num1)
+  @the_result = Math.sqrt(@the_num)
   erb(:results_square_root)
 end
 
@@ -38,5 +38,11 @@ get("/random/new") do
   erb(:random_new)
 end
 
-get("random/results")
+get("/random/results") do
+  @the_num = params.fetch("users_number").to_f
   
+  @the_result = rand(user_min..user_max)
+
+  erb(:random_results)
+  
+end
