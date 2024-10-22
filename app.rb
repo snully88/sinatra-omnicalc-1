@@ -27,9 +27,16 @@ get("/square_root/new") do
   erb(:square_root_new)
 end
 
-get("square_root/results") do
-  @the_num = params.fetch("users_number").to_f
+get("/square_root/results") do
+  @the_num1 = params.fetch("users_number1").to_f
 
-  @the_result_root = Math.sqrt(@the_num)
+  @the_result1 = Math.sqrt(@the_num1)
   erb(:results_square_root)
 end
+
+get("/random/new") do
+  erb(:random_new)
+end
+
+get("random/results")
+  

@@ -1,5 +1,5 @@
 <h1>
-  Square Results
+  Square Root Results
 </h1>
 
 <%= params %>
@@ -8,7 +8,7 @@
     Number
   </dt>
     <dd>
-      <%= @the_num %>
+      <%= @the_num1 %>
       <!--<%= params.fetch("users_number") %>-->
     </dd>
 
@@ -16,7 +16,7 @@
     Square
   </dt>
     <dd>
-      <%= @the_result %>
+      <%= @the_result1 %>
       <!--<%= params.fetch("users_number).to_f * params.fetch("users_number").to_s-->
     </dd>
   </dl>
