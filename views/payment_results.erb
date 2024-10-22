@@ -1,0 +1,26 @@
+<h1>
+  Payment Results
+</h1>
+
+<%= params %>
+<dl>
+  <dt>
+    Values
+  </dt>
+    <dd>
+      <%= @the_apr %>
+      <%=@the_years %>
+      <%= @the_pv %>
+    </dd>
+
+  <dt>
+    Monthly Payment
+  </dt>
+    <dd>
+      <%= @the_payment %>
+    </dd>
+  </dl>
+
+  <a href="/payment/new">
+    Calculate another payment
+  </a>
